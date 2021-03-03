@@ -16,6 +16,12 @@ export const argv: any = yargs.options({
         describe: 'The username used to log into Microsoft Stream (enabling this will fill in the email field for you).',
         demandOption: false
     },
+    password: {
+        alias: 'p',
+        type: 'string',
+        describe: 'The password of your Microsoft Stream Account, this will ONLY work if your account is from an organization (like University ecc) Tested with UniCa.',
+        demandOption: false
+    },
     videoUrls: {
         alias: 'i',
         describe: 'List of urls to videos or Microsoft Stream groups.',
@@ -45,7 +51,7 @@ export const argv: any = yargs.options({
     keepLoginCookies: {
         alias: 'k',
         describe: 'Let Chromium cache identity provider cookies so you can use "Remember me" during login.\n' +
-                  'Must be used every subsequent time you launch Destreamer if you want to log in automatically.',
+            'Must be used every subsequent time you launch Destreamer if you want to log in automatically.',
         type: 'boolean',
         default: false,
         demandOption: false
@@ -110,27 +116,27 @@ export const argv: any = yargs.options({
         demandOption: false
     }
 })
-.wrap(120)
-.check(() => noArguments())
-.check((argv: any) => checkInputConflicts(argv.videoUrls, argv.inputFile))
-.check((argv: any) => {
-    if (checkOutDir(argv.outputDirectory)) {
-        return true;
-    }
-    else {
-        logger.error(CLI_ERROR.INVALID_OUTDIR);
+    .wrap(120)
+    .check(() => noArguments())
+    .check((argv: any) => checkInputConflicts(argv.videoUrls, argv.inputFile))
+    .check((argv: any) => {
+        if (checkOutDir(argv.outputDirectory)) {
+            return true;
+        }
+        else {
+            logger.error(CLI_ERROR.INVALID_OUTDIR);
 
-        throw new Error(' ');
-    }
-})
-.check((argv: any) => isOutputTemplateValid(argv))
-.argv;
+            throw new Error(' ');
+        }
+    })
+    .check((argv: any) => isOutputTemplateValid(argv))
+    .argv;
 
 
 function noArguments(): boolean {
     // if only 2 args no other args (0: node path, 1: js script path)
     if (process.argv.length === 2) {
-        logger.error(CLI_ERROR.MISSING_INPUT_ARG, {fatal: true});
+        logger.error(CLI_ERROR.MISSING_INPUT_ARG, { fatal: true });
 
         // so that the output stays clear
         throw new Error(' ');
