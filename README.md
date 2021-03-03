@@ -29,6 +29,7 @@ This release would not have been possible without the code and time contributed 
 - [Università di Pisa][unipi]: fork over at https://github.com/Guray00/destreamer-unipi
 - [Università della Calabria][unical]: fork over at https://github.com/peppelongo96/UnicalDown
 - [Università degli Studi di Parma][unipr]: fork over at https://github.com/vRuslan/destreamer-unipr
+- [Università degli Studi di Cagliari][unica]: fork over at https://github.com/lorenzoconcas/destreamer-unica
 
 ## What's new
 ### v2.2
