@@ -254,3 +254,4 @@ Please open an [issue](https://github.com/snobu/destreamer/issues) and we'll loo
 [unipi]: https://www.unipi.it/
 [unical]: https://www.unical.it/portale/
 [unipr]: https://www.unipr.it/
+[unica]: https://www.unica.it/
