@@ -3,15 +3,12 @@
 </a>
 
 ### Come si usa?
+ - Tutti gli eseguibili presenti e aggiunti in questa repo sono per Windows
  - Oltre i requisiti del progetto base sotto indicato, sono stati creati due file batch per velocizzare le operazioni su windows,
  basta semplicemente aprire il file 1_Compila soltanto (la prima volta) e poi modificare il file 2_ScaricaListe inserendo i propri dati di accesso ad UniCa. 
  - Attenzione, le password sono salvate in chiaro sul vostro computer. 
  - Se non esiste, creare un file urls.txt e inserire i link delle videolezioni, un link per riga
  - Infine eseguire il file 2_ScaricaListe
-
-
-### Versione precompilata in arrivo
-
 
 
 **destreamer v3.0** is just around the corner. You can try out a pre-release today by cloning [this branch](https://github.com/snobu/destreamer/tree/aria2c_forRealNow).
@@ -52,7 +49,7 @@ Hopefully this doesn't break the end user agreement for Microsoft Stream. Since 
 
 - [**Node.js**][node]: You'll need Node.js version 8.0 or higher. A GitHub Action runs tests on all major Node versions on every commit. One caveat for Node 8, if you get a `Parse Error` with `code: HPE_HEADER_OVERFLOW` you're out of luck and you'll need to upgrade to Node 10+. PLEASE NOTE WE NO LONGER TEST BUILDS AGAINST NODE 8.x. YOU ARE ON YOUR OWN.
 - **npm**: usually comes with Node.js, type `npm` in your terminal to check for its presence
-- [**ffmpeg**][ffmpeg]: a recent version (year 2019 or above), in `$PATH` or in the same directory as this README file (project root). ATTENZIONE binario precompilato incluso
+- [**ffmpeg**][ffmpeg]: a recent version (year 2019 or above), in `$PATH` or in the same directory as this README file (project root). ATTENZIONE binario precompilato per windows incluso
 - [**git**][git]: one or more npm dependencies require git.
 
 Destreamer takes a [honeybadger](https://www.youtube.com/watch?v=4r7wHMg5Yjg) approach towards the OS it's running on. We've successfully tested it on Windows, macOS and Linux.
