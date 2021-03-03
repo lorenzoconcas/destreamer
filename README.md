@@ -9,6 +9,7 @@
  - Se non esiste, creare un file urls.txt e inserire i link delle videolezioni, un link per riga
  - Infine eseguire il file 2_ScaricaListe
 
+
 ### Versione precompilata in arrivo
 
 
@@ -51,7 +52,7 @@ Hopefully this doesn't break the end user agreement for Microsoft Stream. Since 
 
 - [**Node.js**][node]: You'll need Node.js version 8.0 or higher. A GitHub Action runs tests on all major Node versions on every commit. One caveat for Node 8, if you get a `Parse Error` with `code: HPE_HEADER_OVERFLOW` you're out of luck and you'll need to upgrade to Node 10+. PLEASE NOTE WE NO LONGER TEST BUILDS AGAINST NODE 8.x. YOU ARE ON YOUR OWN.
 - **npm**: usually comes with Node.js, type `npm` in your terminal to check for its presence
-- [**ffmpeg**][ffmpeg]: a recent version (year 2019 or above), in `$PATH` or in the same directory as this README file (project root).
+- [**ffmpeg**][ffmpeg]: a recent version (year 2019 or above), in `$PATH` or in the same directory as this README file (project root). ATTENZIONE binario precompilato incluso
 - [**git**][git]: one or more npm dependencies require git.
 
 Destreamer takes a [honeybadger](https://www.youtube.com/watch?v=4r7wHMg5Yjg) approach towards the OS it's running on. We've successfully tested it on Windows, macOS and Linux.
