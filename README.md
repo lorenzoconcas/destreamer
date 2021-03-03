@@ -2,6 +2,17 @@
   <img src="https://github.com/snobu/destreamer/workflows/Node%20CI/badge.svg" alt="CI build status" />
 </a>
 
+### Come si usa?
+ Oltre i requisiti del progetto base sotto indicato, sono stati creati due file batch per velocizzare le operazioni su windows,
+ basta semplicemente aprire il file 1_Compila soltanto (la prima volta) e poi modificare il file 2_ScaricaListe inserendo i propri dati di accesso
+ ad UniCa. Attenzione, le password sono salvate in chiaro sul vostro computer. 
+ Se non esiste, creare un file urls.txt e inserire i link delle videolezioni, un link per riga
+ Infine eseguire il file 2_ScaricaListe
+
+### Versione precompilata in arrivo
+
+
+
 **destreamer v3.0** is just around the corner. You can try out a pre-release today by cloning [this branch](https://github.com/snobu/destreamer/tree/aria2c_forRealNow).
 
 ![destreamer](assets/logo.png)
